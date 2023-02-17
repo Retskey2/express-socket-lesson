@@ -2,9 +2,9 @@
   "name": "express-socket-lesson",
   "version": "1.0.0",
   "description": "it's my personality express-socket lesson",
-  "main": "server.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon src/index.js",
     "migrate": "npx sequelize-cli db:migrate",
     "migrate:undo": "npx sequelize-cli db:migrate:undo",
     "migrate:create":  "npx sequelize-cli db:create"

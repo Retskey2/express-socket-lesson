@@ -8,8 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const port = 4000;
 app = initializeRoutes(app);
-
-app.get("/", (req, res) => {
+  app.get("/", (req, res) => {
     res.status(200).send({
       success: true,
       message: "welcome to the beginning of greatness",
