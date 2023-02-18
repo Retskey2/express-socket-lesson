@@ -1,4 +1,4 @@
-const userRoute = require("./user/user");
+const userRoute = require("./user.route");
 
 const allRoutes = [userRoute];
 
@@ -8,7 +8,7 @@ const initializeRoutes = (app) => {
     })
 
     allRoutes.forEach((router) => {
-      app.use(`/api/v1/${router.name}`, router.route);
+      app.use(`/api/v1/${router.path}`, router.route);
     });
     return app;
   };
